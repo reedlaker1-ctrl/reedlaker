@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reed Laker | ME + Econ</title>
+    <style>
+        /* --- RESET & VARIABLES --- */
+        :root {
+            --bg-color: #0f172a; /* Deep Navy */
+            --card-bg: #1e293b; /* Lighter Navy */
+            --text-main: #f8fafc; /* Almost White */
+            --text-muted: #94a3b8; /* Slate Grey */
+            --accent: #38bdf8; /* Electric Blue */
+            --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: var(--font-main);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* --- LAYOUT --- */
+        .container {
+            width: 100%;
+            max-width: 700px;
+            padding: 2rem;
+        }
+
+        /* --- HERO SECTION --- */
+        header {
+            text-align: left;
+            margin-bottom: 3rem;
+            border-bottom: 1px solid #334155;
+            padding-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: var(--accent);
+            font-size: 1.1rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 1.5rem;
+        }
+
+        .bio {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            max-width: 600px;
+        }
+
+        /* --- FOCUS GRID --- */
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #334155;
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            border-color: var(--accent);
+        }
+
+        .card h3 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-main);
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        /* --- FOOTER / LINKS --- */
+        footer {
+            text-align: left;
+        }
+
+        .links a {
+            color: var(--text-main);
+            text-decoration: none;
+            margin-right: 1.5rem;
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        .links a:hover {
+            color: var(--accent);
+            border-bottom-color: var(--accent);
+        }
+
+        /* --- MOBILE TWEAKS --- */
+        @media (max-width: 600px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <h1>Reed Laker</h1>
+            <p class="subtitle">Mechanical Engineering & Economics</p>
+            <p class="bio">
+                Student at Brigham Young University. Bridging the gap between hardware systems and market strategy. 
+                Currently focused on the intersection of deep tech engineering and intellectual property law.
+            </p>
+        </header>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Technical Systems</h3>
+                <p>Developing proficiency in high-power rocketry, mechatronics, and computational engineering methods. (Spring 2026 Portfolio Loading)</p>
+            </div>
+
+            <div class="card">
+                <h3>Market Analysis</h3>
+                <p>Researching patent law landscapes, antitrust policy, and the unit economics of emerging technologies.</p>
+            </div>
+        </div>
+
+        <footer>
+            <div class="links">
+                <a href="mailto:your-email@byu.edu">Email</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>
