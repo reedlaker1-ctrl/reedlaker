@@ -10,6 +10,42 @@
   <meta property="og:type" content="website">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="sitemap" href="sitemap.xml" type="application/xml">
+  
+  <!-- JSON-LD Structured Data for Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Reed Laker",
+    "url": "https://reedlaker.me",
+    "email": "reed.laker1@gmail.com",
+    "sameAs": [
+      "https://www.linkedin.com/in/reed-laker/",
+      "https://github.com/reedlaker1-ctrl",
+      "https://canyontutors.com"
+    ],
+    "jobTitle": "Mechanical Engineering Student & Educator",
+    "knowsAbout": ["Soft Robotics", "Mechanical Engineering", "ACT Test Prep", "Tutoring", "Human-Robot Interaction"],
+    "worksFor": [
+      {
+        "@type": "Organization",
+        "name": "Brigham Young University",
+        "url": "https://www.byu.edu"
+      },
+      {
+        "@type": "Organization",
+        "name": "Canyon Tutors",
+        "url": "https://canyontutors.com"
+      },
+      {
+        "@type": "Organization",
+        "name": "BYU RAD Lab",
+        "url": "http://radlab.byu.edu"
+      }
+    ]
+  }
+  </script>
   <script>
     // Apply saved theme before render to prevent flash
     (function() {
@@ -310,7 +346,16 @@
   </section>
 
   <footer class="site-footer">
-    <div class="container">&copy; 2025 Reed Laker</div>
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; font-size: 0.9rem;">
+        <span>&copy; 2025 Reed Laker</span>
+        <div>
+          <a href="/tutoring" style="color: var(--text-muted);">ACT Tutoring</a>
+          <span style="color: var(--text-muted);">&nbsp;&middot;&nbsp;</span>
+          <a href="sitemap.xml" style="color: var(--text-muted);">Sitemap</a>
+        </div>
+      </div>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>
